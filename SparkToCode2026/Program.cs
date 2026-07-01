@@ -17,7 +17,7 @@ class Program
         Console.WriteLine("Student: " + student);
         
         
-        
+       ////////////////////////////////////////////////
         //Task 2 - Rectangle Calculator
         Console.Write("Please Enter Your length: ");
         double length= double.Parse( Console.ReadLine());
@@ -29,5 +29,21 @@ class Program
         double Perimeter = 2 * (length + width);
         Console.WriteLine("the Area:" +Area );
         Console.WriteLine("the Perimeter:" +Perimeter );
+        
+        ////////////////////////////////////////////////
+        //Task 3 - Even or Odd Checker
+        Console.WriteLine("plase Enter The whole number:");
+        int num = int.Parse(Console.ReadLine());
+        if (num % 2 == 0)
+        {
+            Console.WriteLine("even number");
+        }
+        else
+        {
+            Console.WriteLine("odd number ");
+        }
+        ////////////////////////////////////////////////
+        
+        
     }
 }
