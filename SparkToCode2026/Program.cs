@@ -87,7 +87,15 @@ class Program
                 Console.WriteLine("please choose a correct character");
                 break;
         }
-            
         
+        //////////////////////////////////////
+        //Task Task 6 - Temperature Converter
+        
+        Console.WriteLine("enter a temperature in Celsius");
+        double temperature = double.Parse(Console.ReadLine());
+        double fahrenheit= (temperature * 9 / 5) +32;
+        Console.WriteLine("the Fahrenheit "+fahrenheit);
+
+
     }
 }
