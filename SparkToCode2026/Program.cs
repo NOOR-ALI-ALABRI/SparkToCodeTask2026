@@ -105,7 +105,7 @@ class Program
         Console.WriteLine("enter your age ");
         int age = int.Parse(Console.ReadLine());
 
-        if (age >= 0 && age == 12)
+        if (age >= 0 && age <= 12)
         {
             Console.WriteLine("Child :2.000 OMR");
         }
@@ -113,7 +113,7 @@ class Program
         {
            Console .WriteLine("Adult :5.000 OMR");
         }
-        else if (age >60 )
+        else if (age >=60 )
         {
             Console.WriteLine("Senior :3.000 OMR.");
         }
@@ -233,8 +233,40 @@ class Program
               Console.WriteLine("Invalid operator");
               break;
       }
+/////////////////////////////////
+// Task 11 - Loan Eligibility System
+        Console.WriteLine("Enter your age:");
+        int age = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter your monthly income:");
+        double salary = double.Parse(Console.ReadLine());
+        Console.WriteLine("Do you have an existing loan? (yes/no):");
+        string input = Console.ReadLine();
+        bool loan = (input == "yes");
+        
+        if (age >= 21 && age <= 60 && salary >= 400 && !loan)
+        {
+            Console.WriteLine("Eligible");
+        }
+        else
+        {
+            if (age < 21)
+            { 
+                Console.WriteLine("Not eligible: Age out of range");
+            }
 
+            if ((salary < 400))
+            {
+                Console.WriteLine("Not eligible: Income too low");
+            }
+            if (loan)
+            {
+                Console.WriteLine("Not eligible: Existing loan");
+            }
+        }
+        /////////////////////////////////////////////
+        /// 
 
+      
 
     }
 }
