@@ -312,4 +312,21 @@ class Program
                   Console.WriteLine("Invalid region");
                   break;
                   
-                  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                  //////////////
+                  //ask 13 - Triangle Type Classifier
+                  Console.WriteLine("Enter side 1:");
+                  double a = double.Parse(Console.ReadLine());
+
+                  Console.WriteLine("Enter side 2:");
+                  double b = double.Parse(Console.ReadLine());
+
+                  Console.WriteLine("Enter side 3:");
+                  double c = double.Parse(Console.ReadLine());
+                      
+                  if (validTriangle)
+                  
+                   /////////////////
+                   
+                      
+              }
+          }
