@@ -5,33 +5,35 @@ class Program
     static void Main(string[] args)
     {
         //Task 1 - Personal Info Card
-
-        string name= "sara";
-        int age =21 ;
+     
+        string name = "sara";
+        int age = 21;
         double height = 1.65;
-        bool student =true;
-        
+        bool student = true;
+
         Console.WriteLine("Name: " + name);
         Console.WriteLine("Age: " + age);
         Console.WriteLine("Height: " + height);
         Console.WriteLine("Student: " + student);
-        
-        
-       ////////////////////////////////////////////////
+       
+
+        ////////////////////////////////////////////////
         //Task 2 - Rectangle Calculator
-        Console.Write("Please Enter Your length: ");
-        double length= double.Parse( Console.ReadLine());
         
+        Console.Write("Please Enter Your length: ");
+        double length = double.Parse(Console.ReadLine());
+
         Console.Write("Please Enter Your width: ");
         double width = double.Parse(Console.ReadLine());
-        
+
         double Area = length * width;
         double Perimeter = 2 * (length + width);
-        Console.WriteLine("the Area:" +Area );
-        Console.WriteLine("the Perimeter:" +Perimeter );
+        Console.WriteLine("the Area:" + Area);
+        Console.WriteLine("the Perimeter:" + Perimeter);
         
         ////////////////////////////////////////////////
-        //Task 3 - Even or Odd Checker
+        //Task 3 - Even or Odd Checker 
+        
         Console.WriteLine("plase Enter The whole number:");
         int num = int.Parse(Console.ReadLine());
         if (num % 2 == 0)
@@ -42,12 +44,13 @@ class Program
         {
             Console.WriteLine("odd number ");
         }
+
         ////////////////////////////////////////////////
         //Task 4 - Voting Eligibility
         Console.WriteLine("Enter your Age:");
         int age = int.Parse(Console.ReadLine());
         bool id = true;
-        if (age >= 18  && id==true)
+        if (age >= 18 && id == true)
         {
             Console.WriteLine(" allow to vote");
         }
@@ -55,47 +58,96 @@ class Program
         {
             Console.WriteLine("not allow to vote");
         }
-        
+
         ////////////////////////////////////////
         //Task 5 - Grade Letter Lookup
         Console.WriteLine("enter a single character");
         char character = char.Parse(Console.ReadLine());
 
         switch (character)
-        {   case 'A'  :
-            Console.WriteLine("Excellent");
-            break;
-        
-            case 'B' :
+        {
+            case 'A':
+                Console.WriteLine("Excellent");
+                break;
+
+            case 'B':
                 Console.WriteLine("Very Good");
                 break;
-            
-            case 'C'  :
+
+            case 'C':
                 Console.WriteLine("Good");
                 break;
-            
+
             case 'D':
                 Console.WriteLine("Pass");
                 break;
 
-            
-            case 'F'   :
+
+            case 'F':
                 Console.WriteLine("Fail");
                 break;
-            
+
             default:
                 Console.WriteLine("please choose a correct character");
                 break;
         }
-        
+
         //////////////////////////////////////
         //Task Task 6 - Temperature Converter
-        
+
         Console.WriteLine("enter a temperature in Celsius");
         double temperature = double.Parse(Console.ReadLine());
-        double fahrenheit= (temperature * 9 / 5) +32;
-        Console.WriteLine("the Fahrenheit "+fahrenheit);
+        double fahrenheit = (temperature * 9 / 5) + 32;
+        Console.WriteLine("the Fahrenheit " + fahrenheit);
 
+        ///////////////////////////////////////
+        //Task 7 - Movie Ticket §
+        Console.WriteLine("enter your age ");
+        int age = int.Parse(Console.ReadLine());
 
+        if (age >= 0 && age == 12)
+        {
+            Console.WriteLine("Child :2.000 OMR");
+        }
+        else if (age >= 13 && age <= 59)
+        {
+           Console .WriteLine("Adult :5.000 OMR");
+        }
+        else if (age >60 )
+        {
+            Console.WriteLine("Senior :3.000 OMR.");
+        }
+        else
+        {
+            Console.WriteLine("error");
+        }
+        ///////////////
+      //Task 8 - Restaurant Bill with Membership Discount
+      Console.WriteLine("Enter total bill amount:");
+      double bill = double.Parse(Console.ReadLine());
+
+      Console.WriteLine("Are you a loyalty member? (yes/no):");
+      string input = Console.ReadLine();
+
+      bool loyalty = (input == "yes");
+
+      double discount = 0;
+      double finalAmount = bill;
+
+      if (bill > 20 && loyalty)
+      {
+          discount = bill * 0.15;
+          finalAmount = bill - discount;
+      }
+      else
+      {
+          discount = 0;
+          finalAmount = bill;
+      }
+
+      Console.WriteLine("Original bill: " + bill);
+      Console.WriteLine("Discount: " + discount);
+      Console.WriteLine("Final amount: " + finalAmount);
+      
     }
 }
