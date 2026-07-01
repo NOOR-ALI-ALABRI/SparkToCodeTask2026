@@ -16,5 +16,18 @@ class Program
         Console.WriteLine("Height: " + height);
         Console.WriteLine("Student: " + student);
         
+        
+        
+        //Task 2 - Rectangle Calculator
+        Console.Write("Please Enter Your length: ");
+        double length= double.Parse( Console.ReadLine());
+        
+        Console.Write("Please Enter Your width: ");
+        double width = double.Parse(Console.ReadLine());
+        
+        double Area = length * width;
+        double Perimeter = 2 * (length + width);
+        Console.WriteLine("the Area:" +Area );
+        Console.WriteLine("the Perimeter:" +Perimeter );
     }
 }
