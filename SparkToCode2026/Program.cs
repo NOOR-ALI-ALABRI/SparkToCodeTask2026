@@ -16,6 +16,5 @@ class Program
         Console.WriteLine("Height: " + height);
         Console.WriteLine("Student: " + student);
         
-
     }
 }
