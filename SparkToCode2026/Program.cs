@@ -368,7 +368,7 @@ class Program
         {
             Console.WriteLine("Not a valid triangle");
         }
-        */
+        
         ////////////////////////////////////////////
         //Task 14 - Online Store Checkout
         Console.WriteLine("enter a product code 1, 2, 3):");
@@ -426,6 +426,10 @@ class Program
         
         
         
-
+        */
+        
+        
+        // 
     }
+    
 }
